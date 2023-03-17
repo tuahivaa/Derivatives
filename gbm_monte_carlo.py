@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 S0 = 100
 mu = 0.35
 sigma = 0.4
-paths = 10
+paths = 1000
 time = 1
 dt = 1/252
 
@@ -32,4 +32,6 @@ plt.ylabel('Price')
 
 for price_path in price_paths:
     plt.plot(price_path)
+
+plt.savefig("gbm.png")
 plt.show()
