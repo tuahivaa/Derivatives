@@ -33,5 +33,5 @@ plt.ylabel('Price')
 for price_path in price_paths:
     plt.plot(price_path)
 
-plt.savefig("gbm.png")
+plt.savefig("gbm_simulation.png")
 plt.show()
