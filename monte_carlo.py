@@ -31,4 +31,5 @@ for i in range(1000):
     returns = np.random.normal(mu, sigma, n)
     prices = S0 * (returns + 1).cumprod()
     plt.plot(prices)
+plt.axhline(S0,0)
 plt.show()
