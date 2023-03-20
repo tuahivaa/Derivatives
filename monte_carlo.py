@@ -10,7 +10,6 @@ import yfinance as yf
 #i = df['Adj Close'].iloc[-1]
 #si = i*(SP+1).cumprod()
 
-
 #stock price a T0
 S0 = 100
 #drfit, expected daily return
@@ -20,14 +19,9 @@ sigma = 0.02
 #legnth in days
 n = 252
 
-paths = []
-
-#simulate daily returns
-
-#prices = S0 * (returns + 1).cumprod()
-
 
 for i in range(1000):
+    # simulate daily returns
     returns = np.random.normal(mu, sigma, n)
     prices = S0 * (returns + 1).cumprod()
     plt.plot(prices)
