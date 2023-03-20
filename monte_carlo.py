@@ -26,4 +26,5 @@ for i in range(1000):
     prices = S0 * (returns + 1).cumprod()
     plt.plot(prices)
 plt.axhline(S0,0)
+plt.savefig("monte_carlo_simulation.png")
 plt.show()
