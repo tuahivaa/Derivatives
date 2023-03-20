@@ -19,7 +19,6 @@ sigma = 0.02
 #legnth in days
 n = 252
 
-
 for i in range(1000):
     # simulate daily returns
     returns = np.random.normal(mu, sigma, n)
